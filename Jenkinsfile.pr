@@ -1,0 +1,4 @@
+@Library('sharedPipelines@main') _
+
+_dbPipeline( base: 'main',
+             stages: [ 'checkout', 'migrate', '*'])
